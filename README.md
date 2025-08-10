@@ -27,7 +27,7 @@ Please refer to .env and frontend/.env for configurations
 
    ```bash
    git clone https://github.com/jivesh-dot/vue.git
-   cd 
+   cd easy_pay
    ```
 
 2. **Environment Variables**
