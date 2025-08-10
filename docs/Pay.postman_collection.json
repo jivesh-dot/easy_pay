@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "8cceaa8c-db98-45c3-85b1-584884f84832",
+		"name": "Pay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4174171"
+	},
+	"item": [
+		{
+			"name": "Create Payment Intent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0NzY5NTQ3LCJpYXQiOjE3NTQ3NjkyNDcsImp0aSI6ImUwNDBlNWU1OGFlNDQ5ZGJhMTBhZmUyYzJhMTgxMjYzIiwidXNlcl9pZCI6IjYifQ.HyJbsgu-izhIQOcHcmpoyBbjRQoGGgDgOR7olpN3oNo"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:5173/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"amount\":49.99,\"currency\":\"AED\",\"description\":\"Demo itdem\"}"
+				},
+				"url": {
+					"raw": "http://192.168.0.109:8000/api/v1/payment-intents/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"109"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"payment-intents",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0NzY5NTQ3LCJpYXQiOjE3NTQ3NjkyNDcsImp0aSI6ImUwNDBlNWU1OGFlNDQ5ZGJhMTBhZmUyYzJhMTgxMjYzIiwidXNlcl9pZCI6IjYifQ.HyJbsgu-izhIQOcHcmpoyBbjRQoGGgDgOR7olpN3oNo"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:5173/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"amount\":49.99,\"currency\":\"AED\",\"description\":\"Demo itdem\"}"
+				},
+				"url": {
+					"raw": "http://192.168.0.109:8000/api/v1/payment-intents/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"109"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"payment-intents",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:5173/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"s.jivesh01+5@gmail.com\",\"password\":\"demotest\",\"business_name\":\"demo merchant\"}"
+				},
+				"url": {
+					"raw": "http://192.168.0.109:8000/api/v1/register/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"109"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU0NzY5NTQ3LCJpYXQiOjE3NTQ3NjkyNDcsImp0aSI6ImUwNDBlNWU1OGFlNDQ5ZGJhMTBhZmUyYzJhMTgxMjYzIiwidXNlcl9pZCI6IjYifQ.HyJbsgu-izhIQOcHcmpoyBbjRQoGGgDgOR7olpN3oNo"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:5173"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:5173/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"amount\":49.99,\"currency\":\"AED\",\"description\":\"Demo itdem\"}"
+				},
+				"url": {
+					"raw": "http://192.168.0.109:8000/api/v1/payment-intents/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"109"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"payment-intents",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
