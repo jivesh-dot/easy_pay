@@ -26,7 +26,7 @@ Please refer to .env and frontend/.env for configurations
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/jivesh-dot/vue.git
+   git clone https://github.com/jivesh-dot/easy_pay.git
    cd easy_pay
    ```
 
